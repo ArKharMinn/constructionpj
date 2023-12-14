@@ -1,0 +1,547 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    box-sizing:border-box;
+    margin:0 auto;
+    padding:0;
+    scroll-behavior:smooth;
+}
+
+:root {
+    --text-color-:white;
+    --btn-color:rgb(18, 194, 12);
+    --btn-text-color:black;
+}
+
+header {
+    background-image:url(./constructionImage/constructionCV.jpg) ;
+    width:100%;
+    height:600px;
+    opacity: 1;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a {
+    color:inherit;
+    text-decoration: none;
+}
+
+.top ,.navBot{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:0 auto;
+    max-width: 1200px;
+}
+
+.companyTop {
+    display:flex;
+    gap:0.5rem;
+    align-items: center;
+}
+
+.house {
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.home {
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--text-color-);
+    padding: 5px;
+    background-color: var(--btn-color);
+    border-radius: 10px;
+}
+
+.companyBot h5{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ul {
+    list-style:none;
+    display:flex;
+    gap:1.5rem;
+    justify-content:center;
+    align-items:center;
+    padding:0;
+}
+
+.ulConnection li a {
+    display:flex;
+    gap:1rem;
+}
+
+@media (max-width:800px) {
+   
+}
+
+h5 ,h4 ,h6 {
+    padding:0;
+    margin:0;
+}
+
+/* navbot */
+
+.navBot {
+    background-color: black;
+    color:var(--text-color-);
+ 
+}
+
+.navbotUl {
+    font-size:13px;
+    font-weight: 800;
+    margin-left: 1rem;
+    margin-top: 10px;
+}
+
+.menuDetails {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.8;
+    background-color: rgb(60, 61, 61);
+    width:200px;
+    border-radius: 0.5rem;
+}
+
+.menu {
+    display: none;
+}
+
+@media (max-width:950px) {
+    .navbotUl {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }    
+
+    .navBot {
+        padding: 10px;
+    }
+
+    .ulConnection {
+        display: none;
+    }
+
+    .top {
+        padding:20px;
+    }
+}
+
+.icon {
+    margin-left: 5px;
+}
+
+.botbtn {
+    background-color: var(--btn-color);
+    padding: 18px 10px;
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--btn-text-color);
+}
+
+.sicon {
+    margin-right: 15px;
+}
+
+/* mid */
+
+.mid {
+    left:4.4rem;
+    position:absolute;
+    top:12rem;
+ 
+}
+
+.mid h4 {
+    color:var(--btn-color);
+    font-weight: 900;
+}
+
+.mid h1 {
+    font-weight: 900;
+    color:var(--text-color-);
+    text-transform: uppercase;
+}
+
+.mid p {
+    color:var(--text-color-);
+}
+
+.btnParent {
+    margin-top: 50px;
+}
+
+.lbtn {
+    text-transform: uppercase;
+    outline:none;
+    border:none;
+    width:150px;
+    color:white;
+ 
+}
+
+.lbtn:hover {
+    background-color:aqua;
+    color: var(--btn-text-color);
+    cursor: pointer;
+}
+
+.rightbtn {
+    text-transform: uppercase;
+    outline:none;
+    padding: 14px 10px;
+    color:var(--btn-text-color);
+    border:3px solid var(--btn-text-color);
+    width:150px;
+    font-weight: 900;
+    margin-left:20px;
+} 
+
+.rightbtn:hover {
+    border-color: var(--text-color-);
+    color:var(--text-color-);
+    cursor: pointer;
+}
+
+/* 25years */
+
+.parent {
+    display:flex;
+    padding:20px;
+    position: relative;
+    bottom:4rem;
+    flex-wrap: wrap;
+    margin:0 auto;
+    max-width: 1200px;
+    filter: drop-shadow(10px 10px 10px rgb(182, 168, 168)) ;
+}
+
+.one {
+    width:600px;
+    padding:20px;
+    background-color: var(--btn-color);
+}
+
+.workbtn {
+    background-color: var(--btn-text-color);
+    color: var(--text-color-);
+    padding:10px;
+    border: none;
+    margin-top:17px;
+}
+
+.workbtn:hover {
+    background-color:var(--text-color-);
+    color: var(--btn-text-color);
+    cursor: pointer;
+    font-weight: 200;
+}
+
+.two {
+    width:250px;
+    padding:10px;
+    background-color: var(--text-color-);
+}
+
+.three {
+    width:250px;
+    padding:10px;
+    background-color: var(--text-color-);
+}
+
+.child {
+    display:flex;
+    align-items: baseline;
+ 
+}
+
+.botChild {
+    margin-bottom: 70px;
+}
+
+.ricon {
+    margin-right:10px;
+    font-size:25px;
+}
+
+/* 25years End*/
+
+/* projects */
+
+.project {
+    max-width: 1200px;
+    margin:0 auto;
+    text-align: center;
+}
+
+.pjUl {
+    text-transform: uppercase;
+    gap:3rem;
+}
+
+.pjUl li {
+    position: relative;
+}
+
+.pjUl a::after {
+    content: '';
+    position: absolute;
+    width:0;
+    bottom:-4px;
+    left:0;
+    height: 2px;
+    background-color: black;
+    font-weight: 800;
+}
+
+.pjUl a:hover::after {
+    width:100%;
+    
+}
+
+.pjMenu {
+    display:none;
+}
+
+@media (max-width:700px) {
+    .pjUl {
+        display:none;
+    }
+
+    .pjMenu {
+        display: block;
+        text-align: end;
+    }
+}
+
+.pjParent {
+    display:flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pjImg {
+    width:300px;
+    height:400px;
+}
+
+.pjImg img {
+    width:100%;
+    height:300px;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: 0.5s;
+    filter: drop-shadow(10px 10px 10px rgb(182, 168, 168)) ;
+    
+}
+
+.overflowHide {
+    height:65px;
+    padding: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+   
+}
+
+.pjImg img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.pjbtn {
+   width:200px;
+   text-transform: uppercase;
+   background-color: var(--btn-color);
+   padding:8px;
+   font-weight: 800;
+   border: none;
+   margin: 40px;
+   color: var(--text-color-);
+   transition: 0.5s;
+}
+
+.pjbtn:hover {
+    background-color:aqua;
+    color: var(--btn-text-color);
+    cursor: pointer;
+}
+/* projects end*/
+
+/* leader */
+ 
+.imgContainer {
+    max-width: 1200px;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.cap {
+    max-width: 1200px;
+    margin:0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.imgBG {
+    position: relative;
+    background-image: url(./constructionImage/founder.png);
+    width:400px;
+    height:500px;
+    background-position: center;
+    background-size: cover;
+}
+
+.linepo {
+    position: absolute;
+    bottom:1px;
+    width:100%;
+    text-align: center;
+    background-color: var(--btn-color);
+    color:var(--text-color-);
+    padding:14px 0px;
+    transition: 0.5s;
+}
+
+.linepo:hover {
+    .iconContainer{
+        display: block;
+    }
+
+    .admin {
+        display:none;
+    }
+}
+
+.admin {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.apkIcon {
+    margin: 0 10px;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.apkIcon:hover {
+    color:blue;
+}
+
+.iconContainer {
+    display:none;
+    padding: 10px;
+}
+
+.bio {
+    width: 500px;
+    margin-top: 10px;
+}
+
+
+/* leader end */
+
+/* contact start */
+
+/*  contact end */
+
+/* footer */
+
+.footer {
+    background-color: var(--btn-text-color);
+  
+}
+
+.four {
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+
+.footerL {
+    background-size: cover;
+    color: var(--text-color-);
+    background-position: center;
+    padding:50px;
+    background-color: rgb(61, 56, 56);
+    background-image: url(./constructionImage/lcb-construction-cardiff1.jpg);
+}
+
+.leftFooter {
+    margin-left: 300px;
+}
+
+.leftFooter h5 {
+    color: var(--btn-color);
+    text-shadow: 2px 2px 4px black;
+}
+
+.leftFooter h3 {
+    text-shadow: 2px 2px 4px black;
+}
+
+.leftFooter p {
+    text-shadow: 2px 2px 4px black;
+}
+
+.leftbtn {
+    color:var(--text-color-);
+    background-color: var(--btn-color);
+    padding:10px;
+    margin-top: 20px;
+    border:none;
+    transition: 0.5s;
+    font-weight: 800;
+}
+
+.leftbtn:hover {
+    background-color: aqua;
+    color: var(--btn-text-color);
+    cursor: pointer;
+}
+
+.footerR {
+    background-image: url(./constructionImage/BV-Acharya-22.jpg);
+    background-color: var(--btn-color);
+    background-position: center;
+    background-size: cover;
+    padding:50px;
+    background-color: var(--btn-color);
+}
+
+.fourL {
+    margin-right:0 20px;
+
+}
+
+.footericon {
+    margin:0 10px;
+}
+
+.bgRight h5{
+    text-shadow: 2px 2px 4px rgb(52, 44, 88);
+}
+
+.bgRight h3{
+    text-shadow: 2px 2px 4px rgb(20, 78, 95);
+}
+/* footer end */
